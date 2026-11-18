@@ -354,7 +354,6 @@
 //   if(i%10==0){
 //     console.log(i);
 //   }
-  
 // }
 
 
@@ -453,6 +452,50 @@
 // console.log("Reqem sayi: "+ countNum);
 // console.log("Text sayi: "+ countText);
 
+///////////////////////////////////////////////////////////////////
+// HTML KOD
+// <h1>GeForce 20</h1>
+// <ul>
+//   <li>GTX 1650</li>
+//   <li>GTX 1660</li>
+//   <li class="primary">GTX 1660 Ti</li>
+//   <li>RTX 2070</li>
+//   <li>RTX 2080</li>
+//   <li class="primary">RTX 2080 Ti</li>
+// </ul>
 
+
+
+// 1)
+
+// HTML-kod verilmişdir. Siyahının ilk elementini konsola çıxarın.
+console.log(document.querySelector("li"))
+
+
+// 2)
+
+// HTML-kod verilmişdir. Yalnız JS-kodundan istifadə edərək dəyişklik edin:
+// - Başlığı silin;
+// - Siyahının sonuna mətn ilə yeni bir bölmə «TITAN RTX» əlavə edin .
+console.log(document.querySelector("h1").remove);
+let li = document.createElement("li");
+li.textContent = "TITAN RTX";
+document.querySelector("ul").appendChild(li);
+
+// 3)
+
+// HTML-kod verilmişdir. Yalnız JS-kodundan istifadə edərək dəyişklik edin:
+// - başlıq mətnini «GeForce 20 Series» -a;
+// - fon rəngi stili primary klası olan elementləri #ebebeb rənginə dəyişdirin.
+
+// document.querySelector("h1").textContent("GeForce 20 Series");
+// let elements = document.querySelectorAll(".primary");
+// elements.style
+
+// 4)
+
+// HTML-kodu verilib. Siyahının primary klasına sahib olan bütün elementlərini konsola çıxarın.
+
+console.log(document.querySelectorAll(".primary"));
 
 
